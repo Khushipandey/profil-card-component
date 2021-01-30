@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Kumbh Sans";
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: top -520px left -260px, bottom -630px right -210px;
+    background-repeat: no-repeat;
+    background-color:hsl(185, 75%, 39%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding-bottom: 10px;
+  }
+  .post-crd{
+    border-radius: 15px;
+    background-color:white;
+    transform-origin: center;
+    width: 26%;
+    min-width: 475px;
+    height: 52%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 1/3;
+    box-shadow: 0 0 12px 0 rgba(106, 111, 129, 0.6);
+  }
+  .crd-top{
+    border-radius: 15px 15px 0 0;
+    grid-row: 1 / 3;
+    grid-column: 1/4;
+    background-image: url(images/bg-pattern-card.svg);
+  }
+
+  .victor-img{
+    grid-row: 2 / 4;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+    size: 100%;
+    grid-column: 2/3;
+  }
+
+  .personal-details{
+    grid-row: 4 / 5;
+    grid-column: 1/4;
+    text-align: center;
+    line-height: 1.4em;
+  }
+  .name{
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .age{
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(0, 0%, 59%);
+  }
+  
+  .add{
+    font-size: small;
+    font-weight: 500;
+    color: hsl(0, 0%, 59%);
+  }
+  hr{
+    margin-top: 10px;
+    border: solid;
+    border-top: hsl(0, 0%, 59%);
+    border-width: 0.2px;
+    opacity: 0.4;
+  }
+
+  .line{
+    grid-row: 5/6;
+    grid-column: 1/4;
+    justify-items: center;
+    opacity: 0.4;
+  }
+  .stats{
+    grid-row: 5/7;
+    grid-column: 1/4;
+    display: flex;
+    align-items: center;
+  }
+  .box1, .box2, .box3{
+    flex: 1;
+    text-align: center;
+  }
+  .count{
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 5px;
+  }
+  .discription{
+    font-size: 10px;
+    font-weight: 80;
+    letter-spacing: 2px;
+  }
+.attributions{
+  font-size: 10px;
+}
+a{
+  text-decoration: none;
+  color: rgb(211, 248, 248);
+}
+@media screen and ( max-width: 1027px)
+{
+  body{
+    background-position: top -500px left -460px, bottom -700px right -300px;
+  }
+  .post-crd{
+    width: 30%;
+  }
+}
+@media screen and ( max-width: 655px)
+{
+  body{
+    background-position: top -630px left -735px, bottom -600px right -730px;
+  }
+  .post-crd{
+    max-width: 510px;
+    height: 56%;
+    min-width: 275px;
+    margin: auto;
+    width: 330px;
+  }
+  .personal-details{
+    align-items: end;
+    padding-top: 30px;
+  }
+}
